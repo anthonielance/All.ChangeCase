@@ -1,4 +1,4 @@
-# Soltys.ChangeCase
+# All.ChangeCase
 
 Ported: https://github.com/soltys/Soltys.ChangeCase to .NET Standared 2.0
 
