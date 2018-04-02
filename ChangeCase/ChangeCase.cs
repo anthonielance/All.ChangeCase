@@ -232,5 +232,21 @@ namespace All.ChangeCase
 
             return input.SnakeCase(ci).ToUpper(ci);
         }
+
+        /// <summary>
+        /// Return as a dash separated string with the first character of every word upper cased.
+        /// </summary>
+        /// <param name="input"></param>
+        /// <param name="ci"></param>
+        /// <returns></returns>
+        public static string HeaderCase(this string input, CultureInfo ci = null)
+        {
+            if (ci == null)
+            {
+                ci = CultureInfo.CurrentCulture;
+            }
+
+            return TitleCase(input, ci).Replace(' ', '-');
+        }
     }
 }
